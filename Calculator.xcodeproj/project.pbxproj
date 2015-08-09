@@ -14,6 +14,10 @@
 		C49482FC1B76928F009FAFE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49482FB1B76928F009FAFE9 /* Images.xcassets */; };
 		C49482FF1B76928F009FAFE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C49482FD1B76928F009FAFE9 /* LaunchScreen.xib */; };
 		C494830B1B76928F009FAFE9 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C494830A1B76928F009FAFE9 /* CalculatorTests.m */; };
+		C49483191B7697D2009FAFE9 /* NumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C49483181B7697D2009FAFE9 /* NumberLabel.m */; };
+		C494831D1B76A438009FAFE9 /* MathLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C494831C1B76A438009FAFE9 /* MathLabel.m */; };
+		C49483201B76A86F009FAFE9 /* ClearLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C494831F1B76A86F009FAFE9 /* ClearLabel.m */; };
+		C49483231B76AC12009FAFE9 /* MathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C49483221B76AC12009FAFE9 /* MathManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		C49483041B76928F009FAFE9 /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49483091B76928F009FAFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C494830A1B76928F009FAFE9 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		C49483171B7697D2009FAFE9 /* NumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberLabel.h; sourceTree = SOURCE_ROOT; };
+		C49483181B7697D2009FAFE9 /* NumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberLabel.m; sourceTree = SOURCE_ROOT; };
+		C494831B1B76A438009FAFE9 /* MathLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathLabel.h; sourceTree = "<group>"; };
+		C494831C1B76A438009FAFE9 /* MathLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathLabel.m; sourceTree = "<group>"; };
+		C494831E1B76A86F009FAFE9 /* ClearLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearLabel.h; sourceTree = "<group>"; };
+		C494831F1B76A86F009FAFE9 /* ClearLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearLabel.m; sourceTree = "<group>"; };
+		C49483211B76AC12009FAFE9 /* MathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathManager.h; sourceTree = "<group>"; };
+		C49483221B76AC12009FAFE9 /* MathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,7 @@
 				C49482F61B76928F009FAFE9 /* ViewController.m */,
 				C49482F81B76928F009FAFE9 /* Main.storyboard */,
 				C49482FB1B76928F009FAFE9 /* Images.xcassets */,
+				C494831A1B7697F7009FAFE9 /* Model Objects */,
 				C49482FD1B76928F009FAFE9 /* LaunchScreen.xib */,
 				C49482EE1B76928F009FAFE9 /* Supporting Files */,
 			);
@@ -117,6 +130,21 @@
 				C49483091B76928F009FAFE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C494831A1B7697F7009FAFE9 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C49483171B7697D2009FAFE9 /* NumberLabel.h */,
+				C49483181B7697D2009FAFE9 /* NumberLabel.m */,
+				C494831B1B76A438009FAFE9 /* MathLabel.h */,
+				C494831C1B76A438009FAFE9 /* MathLabel.m */,
+				C494831E1B76A86F009FAFE9 /* ClearLabel.h */,
+				C494831F1B76A86F009FAFE9 /* ClearLabel.m */,
+				C49483211B76AC12009FAFE9 /* MathManager.h */,
+				C49483221B76AC12009FAFE9 /* MathManager.m */,
+			);
+			name = "Model Objects";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49483201B76A86F009FAFE9 /* ClearLabel.m in Sources */,
 				C49482F71B76928F009FAFE9 /* ViewController.m in Sources */,
 				C49482F41B76928F009FAFE9 /* AppDelegate.m in Sources */,
+				C494831D1B76A438009FAFE9 /* MathLabel.m in Sources */,
+				C49483231B76AC12009FAFE9 /* MathManager.m in Sources */,
+				C49483191B7697D2009FAFE9 /* NumberLabel.m in Sources */,
 				C49482F11B76928F009FAFE9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +448,7 @@
 				C49483101B76928F009FAFE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C49483111B76928F009FAFE9 /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				C49483131B76928F009FAFE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
