@@ -17,7 +17,6 @@
     [label.layer setBackgroundColor:[UIColor blackColor].CGColor];
     [label.layer setBorderColor:[UIColor grayColor].CGColor];
     label.text = title;
-
     [self prepareForTapRecognition:self];
 }
 

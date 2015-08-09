@@ -137,4 +137,12 @@
     self.labelDivide.isTapped = false;
 }
 
+-(void)onTapDidAnimateLabel:(NumberLabel *)label {
+    [UIView transitionWithView:label duration:0.25 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        label.layer.shadowOpacity = 0.5;
+        label.textColor = (__bridge UIColor *)([UIColor whiteColor].CGColor);
+    } completion:^(BOOL finished) {
+    }];
+}
+
 @end

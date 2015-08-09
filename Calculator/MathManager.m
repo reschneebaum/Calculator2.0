@@ -7,9 +7,6 @@
 //
 
 #import "MathManager.h"
-#import "NumberLabel.h"
-#import "MathLabel.h"
-#import "ClearLabel.h"
 
 @implementation MathManager
 
