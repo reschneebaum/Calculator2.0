@@ -27,17 +27,20 @@
 -(void)performOperation {
     if ([self.operatorString isEqualToString:@"+"]) {
         self.result = self.i1 + self.i2;
+        self.resultString = [NSString stringWithFormat:@"%i", self.result];
     } else if ([self.operatorString isEqualToString:@"-"]) {
         self.result = self.i1 - self.i2;
+        self.resultString = [NSString stringWithFormat:@"%i", self.result];
     } else if ([self.operatorString isEqualToString:@"x"]) {
         self.result = self.i1 * self.i2;
-    } else if ([self.operatorString isEqualToString:@"/"]) {
-        self.result = self.i1 / self.i2;
-    }
-    if (self.i1 == 0 && [self.operatorString isEqualToString:@"/"]) {
-        self.resultString = @"denied!";
-    } else {
         self.resultString = [NSString stringWithFormat:@"%i", self.result];
+    } else if ([self.operatorString isEqualToString:@"/"]) {
+        if (self.i2 == 0) {
+            self.resultString = @"denied!";
+        } else {
+            self.result = self.i1 / self.i2;
+            self.resultString = [NSString stringWithFormat:@"%i", self.result];
+        }
     }
 //    if (self.result % 1 == 0) {
 //        self.resultString = [NSString stringWithFormat:@"%i", self.result];
